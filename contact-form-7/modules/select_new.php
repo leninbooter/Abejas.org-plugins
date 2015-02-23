@@ -95,15 +95,15 @@ function wpcf7_select_shortcode_handler( $tag ) {
 				$selected = true;
 			}
 		}
-		
-		if( isset($_GET['tipo']) )
+
+		if( isset($_GET('tipo')) )
 		{
-			if($_GET['tipo'] == $value)
+			if($_GET('tipo') == $value)
 			{
 				$selected = true;
 			}
 		}
-
+		
 		$item_atts = array(
 			'value' => $value,
 			'selected' => $selected ? 'selected' : '' );
